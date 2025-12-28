@@ -1,0 +1,1 @@
+Blazor Pokémon Test App
