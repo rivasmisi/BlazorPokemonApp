@@ -1,0 +1,196 @@
+﻿@page "/"
+@rendermode InteractiveServer
+@using System.Text.Json.Serialization;
+@inject IHttpClientFactory HttpClientFactory
+
+<h1>Pokémon</h1>
+
+<div class="toolbar">
+	<input 
+		class="search" placeholder="Search by name..." 
+		@bind="search"
+		@bind:event="oninput"
+	/>
+
+	<button class="btn" @onclick="Reload" disabled="@isLoading">Reload</button>
+</div>
+
+@if (isLoading)
+{
+	<p>Loading...</p>
+}
+else if (!string.IsNullOrWhiteSpace(error))
+{
+	<div class="error">
+		<strong>Error:</strong> @error
+		<div style="margin:8px">
+			<button class="btn" @onclick="Reload">Try again</button>
+		</div>
+	</div>	
+}
+else if (filtered.Count == 0)
+{
+	<p>No results :(</p>
+}
+else
+{
+	<div class="grid">
+		@foreach (var pokemon in filtered)
+		{
+			<div class="card">
+				<div class="sprite-wrap">
+					@if (!string.IsNullOrWhiteSpace(pokemon.SpriteUrl))
+					{
+						<img class="sprite" src="@pokemon.SpriteUrl" alt="@pokemon.Name" loading="lazy" />
+					}
+					else
+					{
+						<div class="sprite-placeholder">?</div>
+					}
+				</div>
+
+				<div class="info-container">
+					<div class="name">@Cap(pokemon.Name)</div>
+					<div class="types">@pokemon.Type</div>
+				</div>
+				<div class="meta">#@pokemon.Id</div>
+			</div>
+		}
+	</div>
+}
+
+@code {
+
+
+	private bool isLoading;
+	private string? error;
+	private string search = "";
+
+	private List<PokemonCard> pokemons = new();
+	private List<PokemonCard> filtered => string.IsNullOrWhiteSpace(search)
+		? pokemons
+		: pokemons.Where(p => p.Name.Contains(search, StringComparison.OrdinalIgnoreCase)).ToList();
+
+	protected override async Task OnInitializedAsync()
+	{
+		await Load();
+	}
+
+	private async Task Reload()
+	{
+		search = "";
+		await Load();
+	}
+
+	private async Task Load()
+	{
+		isLoading = true;
+		error = null;
+		pokemons.Clear();
+
+		try
+		{
+			var http = HttpClientFactory.CreateClient();
+
+			// Get list of Pokemon (names + URL)
+			var list = await http.GetFromJsonAsync<PokeListResponse>(
+				"https://pokeapi.co/api/v2/pokemon?limit=10"
+			);
+
+			if (list?.Results is null || list.Results.Count == 0)
+			{
+				error = "PokeAPI returned an empty list.";
+				return;
+			}
+
+			// Fetch details for each Pokemon (sprite + id)
+			// Sequential fetch
+			foreach (var item in list.Results)
+			{
+				var detail = await http.GetFromJsonAsync<PokeDetailResponse>(item.Url);
+
+				// Set types
+				var typeNames = detail.Types
+					.OrderBy(t => t.Slot)
+					.Select(t => t.Type.Name)
+					.Where(n => !string.IsNullOrWhiteSpace(n))
+					.ToList();
+
+				Console.WriteLine(System.Text.Json.JsonSerializer.Serialize(detail));
+
+				if (detail is null) continue;
+
+				pokemons.Add(new PokemonCard
+					{
+						Id = detail.Id,
+						Name = detail.Name ?? item.Name,
+						SpriteUrl = detail.Sprites?.FrontDefault,
+						Type = string.Join(" / ", typeNames)
+					});
+			}
+
+			// Sort by id
+			pokemons = pokemons.OrderBy(p => p.Id).ToList();
+		} 
+		catch (Exception e)
+		{
+			error = e.Message;
+		}
+		finally
+		{
+			isLoading = false;
+		}
+	}
+
+
+	// === UTILS ===
+	private static string Cap(string? s)
+		=> string.IsNullOrWhiteSpace(s) ? "" : char.ToUpperInvariant(s[0]) + s[1..];
+
+
+	// === CLASSES ===
+	private sealed class PokemonCard
+	{
+		public int Id { get; set; }
+		public string Name { get; set; } = "";
+		public string? SpriteUrl { get; set; }
+		public string Type { get; set; } = "";
+	}
+
+	private sealed class PokeListResponse
+	{
+		public List<PokeListItem> Results { get; set; } = new();
+	}
+
+	private sealed class PokeListItem
+	{
+		public string Name { get; set; } = "";
+		public string Url { get; set; } = "";
+	}
+
+	private sealed class PokeDetailResponse
+	{
+		public int Id { get; set; }
+		public string? Name { get; set; }
+		public PokeSprites? Sprites { get; set; }
+		public List<PokeType> Types { get; set; } = new();
+	}
+
+	private sealed class PokeSprites
+	{
+		[JsonPropertyName("front_default")]
+		public string? FrontDefault { get; set; }
+	}
+
+	private sealed class PokeType
+	{
+		public int Slot { get; set; }
+		public PokeTypeResource Type { get; set; } = new();
+	}
+
+	private sealed class PokeTypeResource
+	{
+		public string Name { get; set; } = "";
+		public string Url { get; set; } = "";
+	}
+}

@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mriva\\OneDrive\\Escritorio\\Blazor\\TestApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E151D341-8D90-4384-BDD9-4B54CAF9101C}|TestApp\\TestApp.csproj|c:\\users\\mriva\\onedrive\\escritorio\\blazor\\testapp\\testapp\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E151D341-8D90-4384-BDD9-4B54CAF9101C}|TestApp\\TestApp.csproj|solutionrelative:testapp\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E151D341-8D90-4384-BDD9-4B54CAF9101C}|TestApp\\TestApp.csproj|c:\\users\\mriva\\onedrive\\escritorio\\blazor\\testapp\\testapp\\components\\pages\\pokemon.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E151D341-8D90-4384-BDD9-4B54CAF9101C}|TestApp\\TestApp.csproj|solutionrelative:testapp\\components\\pages\\pokemon.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E151D341-8D90-4384-BDD9-4B54CAF9101C}|TestApp\\TestApp.csproj|c:\\users\\mriva\\onedrive\\escritorio\\blazor\\testapp\\testapp\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E151D341-8D90-4384-BDD9-4B54CAF9101C}|TestApp\\TestApp.csproj|solutionrelative:testapp\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E151D341-8D90-4384-BDD9-4B54CAF9101C}|TestApp\\TestApp.csproj|c:\\users\\mriva\\onedrive\\escritorio\\blazor\\testapp\\testapp\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E151D341-8D90-4384-BDD9-4B54CAF9101C}|TestApp\\TestApp.csproj|solutionrelative:testapp\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E151D341-8D90-4384-BDD9-4B54CAF9101C}|TestApp\\TestApp.csproj|c:\\users\\mriva\\onedrive\\escritorio\\blazor\\testapp\\testapp\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E151D341-8D90-4384-BDD9-4B54CAF9101C}|TestApp\\TestApp.csproj|solutionrelative:testapp\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E151D341-8D90-4384-BDD9-4B54CAF9101C}|TestApp\\TestApp.csproj|c:\\users\\mriva\\onedrive\\escritorio\\blazor\\testapp\\testapp\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E151D341-8D90-4384-BDD9-4B54CAF9101C}|TestApp\\TestApp.csproj|solutionrelative:testapp\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E151D341-8D90-4384-BDD9-4B54CAF9101C}|TestApp\\TestApp.csproj|c:\\users\\mriva\\onedrive\\escritorio\\blazor\\testapp\\testapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E151D341-8D90-4384-BDD9-4B54CAF9101C}|TestApp\\TestApp.csproj|solutionrelative:testapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E151D341-8D90-4384-BDD9-4B54CAF9101C}|TestApp\\TestApp.csproj|c:\\users\\mriva\\onedrive\\escritorio\\blazor\\testapp\\testapp\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E151D341-8D90-4384-BDD9-4B54CAF9101C}|TestApp\\TestApp.csproj|solutionrelative:testapp\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E151D341-8D90-4384-BDD9-4B54CAF9101C}|TestApp\\TestApp.csproj|c:\\users\\mriva\\onedrive\\escritorio\\blazor\\testapp\\testapp\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E151D341-8D90-4384-BDD9-4B54CAF9101C}|TestApp\\TestApp.csproj|solutionrelative:testapp\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Error.razor",
+              "DocumentMoniker": "C:\\Users\\mriva\\OneDrive\\Escritorio\\Blazor\\TestApp\\TestApp\\Components\\Pages\\Error.razor",
+              "RelativeDocumentMoniker": "TestApp\\Components\\Pages\\Error.razor",
+              "ToolTip": "C:\\Users\\mriva\\OneDrive\\Escritorio\\Blazor\\TestApp\\TestApp\\Components\\Pages\\Error.razor",
+              "RelativeToolTip": "TestApp\\Components\\Pages\\Error.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAewBEAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-27T05:37:37.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\mriva\\OneDrive\\Escritorio\\Blazor\\TestApp\\TestApp\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "TestApp\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\mriva\\OneDrive\\Escritorio\\Blazor\\TestApp\\TestApp\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "TestApp\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-27T05:37:13.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\mriva\\OneDrive\\Escritorio\\Blazor\\TestApp\\TestApp\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "TestApp\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\mriva\\OneDrive\\Escritorio\\Blazor\\TestApp\\TestApp\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "TestApp\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-27T05:01:22.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Pokemon.razor",
+              "DocumentMoniker": "C:\\Users\\mriva\\OneDrive\\Escritorio\\Blazor\\TestApp\\TestApp\\Components\\Pages\\Pokemon.razor",
+              "RelativeDocumentMoniker": "TestApp\\Components\\Pages\\Pokemon.razor",
+              "ToolTip": "C:\\Users\\mriva\\OneDrive\\Escritorio\\Blazor\\TestApp\\TestApp\\Components\\Pages\\Pokemon.razor",
+              "RelativeToolTip": "TestApp\\Components\\Pages\\Pokemon.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-27T04:26:51.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\mriva\\OneDrive\\Escritorio\\Blazor\\TestApp\\TestApp\\Components\\App.razor",
+              "RelativeDocumentMoniker": "TestApp\\Components\\App.razor",
+              "ToolTip": "C:\\Users\\mriva\\OneDrive\\Escritorio\\Blazor\\TestApp\\TestApp\\Components\\App.razor",
+              "RelativeToolTip": "TestApp\\Components\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-27T05:36:31.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "C:\\Users\\mriva\\OneDrive\\Escritorio\\Blazor\\TestApp\\TestApp\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "TestApp\\Components\\Routes.razor",
+              "ToolTip": "C:\\Users\\mriva\\OneDrive\\Escritorio\\Blazor\\TestApp\\TestApp\\Components\\Routes.razor",
+              "RelativeToolTip": "TestApp\\Components\\Routes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-27T05:36:36.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mriva\\OneDrive\\Escritorio\\Blazor\\TestApp\\TestApp\\Program.cs",
+              "RelativeDocumentMoniker": "TestApp\\Program.cs",
+              "ToolTip": "C:\\Users\\mriva\\OneDrive\\Escritorio\\Blazor\\TestApp\\TestApp\\Program.cs",
+              "RelativeToolTip": "TestApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T05:36:44.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\mriva\\OneDrive\\Escritorio\\Blazor\\TestApp\\TestApp\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "TestApp\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\mriva\\OneDrive\\Escritorio\\Blazor\\TestApp\\TestApp\\appsettings.Development.json",
+              "RelativeToolTip": "TestApp\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-27T05:36:42.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\mriva\\OneDrive\\Escritorio\\Blazor\\TestApp\\TestApp\\wwwroot\\app.css",
+              "RelativeDocumentMoniker": "TestApp\\wwwroot\\app.css",
+              "ToolTip": "C:\\Users\\mriva\\OneDrive\\Escritorio\\Blazor\\TestApp\\TestApp\\wwwroot\\app.css",
+              "RelativeToolTip": "TestApp\\wwwroot\\app.css",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAgwHcAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-27T05:09:14.727Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
