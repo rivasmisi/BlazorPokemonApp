@@ -1,0 +1,9 @@
+﻿@page "/parameter/{urlParam?}"
+<h3>Parameter from URL</h3>
+
+<p>@urlParam</p>
+
+@code {
+	[Parameter]
+	public string urlParam { get; set; } = "";
+}

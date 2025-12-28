@@ -106,18 +106,93 @@ h1:focus {
     transform: translateY(-4px);
 }
 
-.info-container {
+.types {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    gap: 6px;
+    flex-wrap: wrap;
 }
 
-.types {
+.type-chip {
     padding-inline: 8px;
-    padding-block: 1px;
-    border-radius: 8px;
+    padding-block: 2px;
+    border-radius: 999px;
     font-size: 12px;
-    background-color: rgba(0,0,0,0.05);
+    font-weight: 300;
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,0.08);
+}
+
+/* TYPES */
+.type-grass {
+    background: rgba(34, 197, 94, 0.18);
+}
+
+.type-poison {
+    background: rgba(168, 85, 247, 0.18);
+}
+
+.type-fire {
+    background: rgba(249, 115, 22, 0.18);
+}
+
+.type-water {
+    background: rgba(59, 130, 246, 0.18);
+}
+
+.type-electric {
+    background: rgba(250, 204, 21, 0.22);
+}
+
+.type-ice {
+    background: rgba(56, 189, 248, 0.18);
+}
+
+.type-fighting {
+    background: rgba(239, 68, 68, 0.18);
+}
+
+.type-ground {
+    background: rgba(234, 179, 8, 0.18);
+}
+
+.type-flying {
+    background: rgba(99, 102, 241, 0.18);
+}
+
+.type-psychic {
+    background: rgba(236, 72, 153, 0.18);
+}
+
+.type-bug {
+    background: rgba(132, 204, 22, 0.20);
+}
+
+.type-rock {
+    background: rgba(161, 98, 7, 0.18);
+}
+
+.type-ghost {
+    background: rgba(107, 114, 128, 0.18);
+}
+
+.type-dragon {
+    background: rgba(37, 99, 235, 0.18);
+}
+
+.type-dark {
+    background: rgba(17, 24, 39, 0.12);
+}
+
+.type-steel {
+    background: rgba(148, 163, 184, 0.25);
+}
+
+.type-fairy {
+    background: rgba(244, 114, 182, 0.22);
+}
+
+.type-normal {
+    background: rgba(100, 116, 139, 0.16);
 }
 
 .sprite-wrap {
